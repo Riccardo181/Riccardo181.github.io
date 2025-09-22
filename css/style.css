@@ -1,0 +1,126 @@
+/* Reset base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Sezioni base */
+.section {
+    flex: 1;
+    position: relative; /* per ::before filtro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00b7ff7e; /* giallo chiaro */
+    color: #333;
+    font-size: 2em;
+    text-decoration: none;
+    border-right: 0px solid #ffd000;
+    cursor: pointer;
+    transition:
+        background-color 0.5s ease,
+        color 0.5s ease,
+        background-image 0.5s ease;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Ultima senza bordo */
+.section:last-child {
+    border-right: none;
+}
+
+/* Hover: cambia sfondo e testo */
+.section:hover {
+    color: black;
+    font-size: 1500%;
+    font-family: 'Times New Roman';
+    background-color: transparent;
+    z-index: 2;
+}
+
+/* Filtro scuro sopra sfondo al hover */
+.section:hover::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.4);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Sfondo specifico per ogni sezione */
+.storia:hover {
+    background-image: url('../img/stroia.jfif');
+}
+
+.luoghi:hover {
+    background-image: url('../img/verona.jfif');
+}
+
+.home:hover {
+    background-image: url('../img/home.jfif');
+}
+
+.cibo:hover {
+    background-image: url('../img/cibo.jfif');
+}
+
+.squadra:hover {
+    background-image: url('../img/calcio.jfif');
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .section {
+        font-size: 1.5em;
+    }
+}
+
+
+/* Sezione pagina (dove mostra contenuti) */
+.page {
+    min-height: 100vh;
+    padding: 3rem 2rem;
+    background: linear-gradient(to bottom , rgb(255, 196, 0),rgb(247,255,0),rgb(0,255,230),rgb(0,0,255)); /* sfumatura giallo-blu */
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* Titoli */
+.page h1, .page h2, .page h3 {
+    font-family: "Roboto";
+    color: #0d47a1; /* colore acceso */
+    
+    font-weight: 700;
+}
+
+/* Testo paragrafo */
+.page p {
+    font-family:cursive
+}
+
+/* Responsive adattamenti */
+@media (max-width: 768px) {
+    .page {
+        padding: 2rem 1rem;
+    }
+    .page p {
+        font-size: 1rem;
+    }
+}
