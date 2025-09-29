@@ -1,18 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-    <title>STORIA DI VERONA</title>
-    <link href="../css/style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storia di Verona</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    <div class="page">
-        <h1 style="font-size: 60px;">Verona</h1>
-        <h2 style="font-size: 50px;">Breve storia della città</h2>
-        <p style="font-size: 30px;">
-            Verona è una città storica nel nord Italia, famosa per la sua eredità romana e medievale. 
-            Fondata dai Romani nel I secolo a.C., è celebre per l'Arena di Verona, un anfiteatro ancora oggi usato per spettacoli dal vivo. 
-            La città è anche nota per essere lo sfondo della tragica storia d'amore di Romeo e Giulietta, resa immortale da Shakespeare.
+<body class="scroll-page">
+
+  <!-- MENU centrato -->
+  <div class="menu-centrale">
+    <a href="index.html">Home</a>
+    <a href="storia.html" class="active">Storia</a>
+    <a href="luoghi.html">Monumenti</a>
+    <a href="cibo.html">Cibo</a>
+    <a href="calcio.html">Calcio</a>
+  </div>
+
+  <!-- CONTENUTO PRINCIPALE -->
+  <div class="page">
+    <h1 class="titolo-principale">Verona</h1>
+    <h2 class="sottotitolo">Breve storia della città</h2>
+
+    <!-- Sezione 1: IMG + TESTO -->
+    <div class="row">
+      <div class="col img-col">
+        <img src="../img/verona_storica.jpg" alt="Immagine Verona">
+      </div>
+      <div class="col text-col">
+        <p class="testo">
+          Verona è una città storica nel nord Italia, famosa per la sua eredità romana e medievale.
+          Fondata dai Romani nel I secolo a.C., è celebre per l'Arena di Verona, un anfiteatro ancora oggi usato per spettacoli dal vivo.
         </p>
+      </div>
     </div>
+
+    <!-- Sezione 2: TESTO + IMG -->
+    <div class="row reverse">
+      <div class="col text-col">
+        <p class="testo">
+          La città è anche nota per essere lo sfondo della tragica storia d'amore di Romeo e Giulietta,
+          resa immortale da Shakespeare. Verona unisce tradizione e cultura con un fascino senza tempo.
+        </p>
+      </div>
+      <div class="col img-col">
+        <img src="../img/storia.jfif" alt="Immagine Arena">
+      </div>
+    </div>
+
+    <!-- Sezione 3: IMG + TESTO -->
+    <div class="row">
+      <div class="col img-col">
+        <img src="../img/verona_romana.jpg" alt="Epoca romana a Verona">
+      </div>
+      <div class="col text-col">
+        <p class="testo">
+          Durante l’epoca romana, Verona divenne una città strategica grazie alla sua posizione lungo le vie consolari.
+          L’Arena, i ponti e il teatro romano testimoniano ancora oggi la grandezza di quel periodo.
+        </p>
+      </div>
+    </div>
+
+    <!-- Sezione 4: TESTO + IMG -->
+    <div class="row reverse">
+      <div class="col text-col">
+        <p class="testo">
+          Nel Medioevo Verona fu governata dalla potente famiglia degli Scaligeri, che trasformò la città in un centro politico e culturale.
+          Molti monumenti, come le Arche Scaligere e Castelvecchio, risalgono a quel periodo.
+        </p>
+      </div>
+      <div class="col img-col">
+        <img src="../img/scaligeri.jpg" alt="Monumenti Scaligeri Verona">
+      </div>
+    </div>
+
+    <!-- Sezione 5: IMG + TESTO -->
+    <div class="row">
+      <div class="col img-col">
+        <img src="../img/rinascimento.jpg" alt="Verona Rinascimentale">
+      </div>
+      <div class="col text-col">
+        <p class="testo">
+          Con il Rinascimento e il dominio della Repubblica di Venezia, Verona fiorì come città d’arte e architettura.
+          Le mura, le piazze e i palazzi storici riflettono ancora l’influenza veneziana.
+        </p>
+      </div>
+    </div>
+  </div> 
+
 </body>
 </html>
