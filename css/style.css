@@ -10,7 +10,7 @@
 /* GENERALI */
 body {
   height: 100%;
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', 'Montserrat', 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
   background: linear-gradient(to bottom, #003366 0%, #002b59 70%, #001f3f 100%);
   color: #fff;
   padding: 30px 15px;
