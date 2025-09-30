@@ -164,11 +164,11 @@ body {
 }
 
 .tab-giocatori tr:nth-child(even) {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(7, 0, 107, 0.637);
 }
 
 .tab-giocatori tr:hover {
-  background: rgba(255, 215, 0, 0.15);
+  background: rgba(255, 217, 0, 0.452);
   transform: scale(1.01);
   transition: all 0.2s ease-in-out;
 }
