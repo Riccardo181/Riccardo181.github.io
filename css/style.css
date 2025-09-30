@@ -164,7 +164,7 @@ body {
 }
 
 .tab-giocatori tr:nth-child(even) {
-  background: rgba(7, 0, 107, 0.637);
+  background: rgba(47, 96, 255, 0.507);
 }
 
 .tab-giocatori tr:hover {
