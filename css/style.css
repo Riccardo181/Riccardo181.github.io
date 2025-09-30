@@ -11,7 +11,8 @@
 body {
   height: 100%;
   font-family: 'Merriweather', 'Montserrat', 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
-  background: linear-gradient(to bottom, #003366 0%, #002b59 70%, #001f3f 100%);
+  background: linear-gradient(to bottom,#a94438 0%,   #d2b48c 40%,  #4b5d4b 70%,   #1f2a44 100%   
+);
   color: #fff;
   padding: 30px 15px;
 }
