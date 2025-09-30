@@ -174,7 +174,7 @@ body {
 }
 
 .tab-giocatori td {
-  color: #f0f0f0;
+  font-family: system-ui, "Segoe UI Emoji", "Noto Color Emoji", "Apple Color Emoji", sans-serif;
 }
 
 .tab-giocatori th {
