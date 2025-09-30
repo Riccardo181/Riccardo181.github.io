@@ -182,6 +182,12 @@ body {
   letter-spacing: 1px;
 }
 
+.tab-giocatori td:last-child {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", system-ui, sans-serif;
+
+}
+
+
 /* Responsive tabella */
 @media (max-width: 600px) {
   .tab-giocatori th, 
