@@ -200,14 +200,14 @@ footer {
   margin-top: auto;
 }
 .footer {
-  background-color: #f0f0f0;
+  background-color: #09005c;
   text-align: center;
   padding: 20px;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   color: #333;
   margin-top: 40px;
-  border-top: 2px solid #ccc;
+  border-top: 2px solid #02008f;
 }
 
 .footer a {
