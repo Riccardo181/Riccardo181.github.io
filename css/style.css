@@ -9,20 +9,16 @@
 
 /* GENERALI */
 body {
+  margin: 0;
   min-height: 100vh;
-  font-family: 'Merriweather', 'Montserrat', 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
-  background: linear-gradient(135deg, #001f3f, #0074D9, #7FDBFF);
-  background-size: 400% 400%;
-  animation: waveGradient 12s ease infinite;
-  color: #fff;
-  padding: 30px 15px;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('../img/blue-wave.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* per effetto parallasse */
+  color: white;
 }
 
-@keyframes waveGradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
 
 /* TITOLO PRINCIPALE */
 .titolo-principale {
