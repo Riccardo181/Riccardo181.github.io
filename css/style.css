@@ -9,12 +9,11 @@
 
 /* GENERALI */
 body {
-  height: 100%;
-  font-family: 'Merriweather', 'Montserrat', 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
-  background: linear-gradient(to bottom, #0044b1, #00196d, #0f1a35);
-  color: #fff;
-  padding: 30px 15px;
+  background: linear-gradient(180deg, #87CEEB 0%, #0099FF 100%);
+  overflow-x: hidden;
+  position: relative;
 }
+
 
 /* TITOLO PRINCIPALE */
 .titolo-principale {
