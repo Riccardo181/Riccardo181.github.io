@@ -9,11 +9,15 @@
 
 /* GENERALI */
 body {
-  background: linear-gradient(180deg, #87CEEB 0%, #0099FF 100%);
+  min-height: 100vh;
+  font-family: 'Merriweather', 'Montserrat', 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
+  background: radial-gradient(circle at center, #4da6ff, #0066b3, #003d66, #001a33);
+  background-attachment: fixed;
+  color: #fff;
+  padding: 30px 15px;
   overflow-x: hidden;
   position: relative;
 }
-
 
 /* TITOLO PRINCIPALE */
 .titolo-principale {
@@ -111,31 +115,6 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .row {
-    flex-direction: column;
-  }
-
-  .titolo-principale {
-    font-size: 36px;
-  }
-
-  .sottotitolo {
-    font-size: 22px;
-  }
-
-  .menu-centrale a {
-    padding: 10px 16px;
-    font-size: 16px;
-  }
-
-  .testo {
-    font-size: 16px;
-  }
-}
 /* --- TABELLA GIOCATORI --- */
 .tab-giocatori {
   width: 100%;
@@ -183,21 +162,13 @@ body {
 
 .tab-giocatori td:last-child {
   font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", system-ui, sans-serif;
-
 }
 
-
-/* Responsive tabella */
-@media (max-width: 600px) {
-  .tab-giocatori th, 
-  .tab-giocatori td {
-    font-size: 14px;
-    padding: 8px;
-  }
-}
+/* FOOTER */
 footer {
   margin-top: auto;
 }
+
 .footer {
   background-color: #09005c;
   text-align: center;
@@ -215,5 +186,38 @@ footer {
 }
 
 .footer a:hover {
-  text-decoration: wavy;
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .titolo-principale {
+    font-size: 36px;
+  }
+
+  .sottotitolo {
+    font-size: 22px;
+  }
+
+  .menu-centrale a {
+    padding: 10px 16px;
+    font-size: 16px;
+  }
+
+  .testo {
+    font-size: 16px;
+  }
+}
+
+/* Responsive tabella */
+@media (max-width: 600px) {
+  .tab-giocatori th, 
+  .tab-giocatori td {
+    font-size: 14px;
+    padding: 8px;
+  }
 }
