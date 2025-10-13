@@ -11,7 +11,7 @@
 body {
   min-height: 100vh;
   font-family: 'Poppins', 'Poppins', 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
-  background: radial-gradient(circle at center, #4da6ff, #0066b3, #003d66, #001a33);
+  background: radial-gradient(circle at center, #115fad, #00508d, #00263f, #001a33);
   background-attachment: fixed;
   color: #fff;
   padding: 30px 15px;
