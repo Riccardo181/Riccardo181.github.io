@@ -188,7 +188,56 @@ footer {
 .footer a:hover {
   text-decoration: underline;
 }
+/* SEZIONI CHIESE */
+.chiesa {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.chiesa:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.4);
+}
+
+/* TITOLI CHIESE */
+.chiesa h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  color: #FFD700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* IMMAGINI CHIESE */
+.foto-chiesa {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 25px rgb(255, 208, 0);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.foto-chiesa:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.7);
+}
+
+/* TESTI CHIESE */
+.chiesa p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  color: #f0f0f0;
+  margin-top: 10px;
+}
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .row {
