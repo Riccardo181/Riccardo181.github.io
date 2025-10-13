@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 /* RESET */
 * {
@@ -10,7 +10,7 @@
 /* GENERALI */
 body {
   min-height: 100vh;
-  font-family: 'Merriweather', 'Montserrat', 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
+  font-family: 'Poppins', 'Poppins', 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
   background: radial-gradient(circle at center, #4da6ff, #0066b3, #003d66, #001a33);
   background-attachment: fixed;
   color: #fff;
@@ -21,7 +21,7 @@ body {
 
 /* TITOLO PRINCIPALE */
 .titolo-principale {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 48px;
   text-align: center;
   color: #FFD700;
@@ -38,7 +38,7 @@ body {
 }
 
 .menu-centrale a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   color: #FFD700;
   padding: 12px 20px;
@@ -66,7 +66,7 @@ body {
   text-align: center;
   color: #FFD700;
   margin: 40px 0 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* --- LAYOUT TESTO + IMMAGINE --- */
@@ -131,7 +131,7 @@ body {
 .tab-giocatori thead {
   background: #FFD700;
   color: #001f3f;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .tab-giocatori th, 
@@ -173,7 +173,7 @@ footer {
   background-color: #09005c;
   text-align: center;
   padding: 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   color: #ffffff;
   margin-top: 40px;
@@ -209,7 +209,7 @@ footer {
 
 /* TITOLI CHIESE */
 .chiesa h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 28px;
   color: #FFD700;
   text-align: center;
