@@ -215,7 +215,17 @@ footer {
   text-align: center;
   margin-bottom: 15px;
 }
+.foto_chiesa {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgb(255, 208, 0);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
 
+.foto_chiesa img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.7);
+}
 
 /* TESTI CHIESE */
 .chiesa p {
