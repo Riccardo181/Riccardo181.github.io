@@ -245,7 +245,7 @@ footer {
 }
 
 .link-giallo:hover {
-    color: #fff; /* cambia colore al passaggio del mouse */
+    color: #ffe600; /* cambia colore al passaggio del mouse */
 }
 /* RESPONSIVE */
 @media (max-width: 768px) {
