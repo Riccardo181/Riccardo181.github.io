@@ -223,7 +223,7 @@ footer {
 }
 
 .foto_chiesa img:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
   box-shadow: 0 0 35px rgba(255, 215, 0, 0.7);
 }
 
