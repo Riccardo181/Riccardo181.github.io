@@ -238,6 +238,15 @@ footer {
   color: #f0f0f0;
   margin-top: 10px;
 }
+.link-giallo {
+    color: #FFD700; /* giallo */
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.link-giallo:hover {
+    color: #fff; /* cambia colore al passaggio del mouse */
+}
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .row {
