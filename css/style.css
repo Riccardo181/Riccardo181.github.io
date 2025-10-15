@@ -14,7 +14,7 @@ body {
   background: radial-gradient(circle at center, #115fad, #00508d, #00263f, #001a33);
   background-attachment: fixed;
   color: #fff;
-  padding: 30px 15px;
+  padding: 50px 150px;
   overflow-x: hidden;
   position: relative;
 }
@@ -274,5 +274,17 @@ footer {
   .tab-giocatori td {
     font-size: 14px;
     padding: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .row .testo-col {
+    order: 1;
+  }
+  .row .img-col {
+    order: 2;
   }
 }
