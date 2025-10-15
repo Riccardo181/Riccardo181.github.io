@@ -276,7 +276,7 @@ footer {
     padding: 8px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 927px) {
   .row {
     flex-direction: column;
   }
