@@ -10,16 +10,16 @@
 /* GENERALI */
 body {
   min-height: 100vh;
-  font-family: 'Poppins', 'Poppins', 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
+  font-family: 'Poppins', 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
   background: radial-gradient(circle at center, #115fad, #00508d, #00263f, #001a33);
   background-attachment: fixed;
   color: #fff;
-  padding: 50px 150px;
+  padding: 40px 100px;
   overflow-x: hidden;
   position: relative;
 }
 
-/* TITOLO PRINCIPALE */
+/* --- TITOLI --- */
 .titolo-principale {
   font-family: 'Poppins', sans-serif;
   font-size: 48px;
@@ -28,7 +28,15 @@ body {
   margin-bottom: 30px;
 }
 
-/* MENU CENTRALE */
+.sottotitolo {
+  font-size: 28px;
+  text-align: center;
+  color: #FFD700;
+  margin: 40px 0 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* --- MENU CENTRALE --- */
 .menu-centrale {
   display: flex;
   justify-content: center;
@@ -58,15 +66,6 @@ body {
   color: #001f3f;
   font-weight: bold;
   box-shadow: 0 0 15px #FFD700;
-}
-
-/* --- SOTTOTITOLO --- */
-.sottotitolo {
-  font-size: 28px;
-  text-align: center;
-  color: #FFD700;
-  margin: 40px 0 20px;
-  font-family: 'Poppins', sans-serif;
 }
 
 /* --- LAYOUT TESTO + IMMAGINE --- */
@@ -105,7 +104,7 @@ body {
   color: #f0f0f0;
 }
 
-/* --- CARD HIGHLIGHTS --- */
+/* --- CARD --- */
 .row .col {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 215, 0, 0.4);
@@ -134,7 +133,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.tab-giocatori th, 
+.tab-giocatori th,
 .tab-giocatori td {
   padding: 12px 16px;
   text-align: center;
@@ -151,24 +150,11 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
-.tab-giocatori td {
-  font-family: system-ui, "Segoe UI Emoji", "Noto Color Emoji", "Apple Color Emoji", sans-serif;
-}
-
-.tab-giocatori th {
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-
 .tab-giocatori td:last-child {
   font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", system-ui, sans-serif;
 }
 
 /* FOOTER */
-footer {
-  margin-top: auto;
-}
-
 .footer {
   background-color: #09005c;
   text-align: center;
@@ -188,14 +174,15 @@ footer {
 .footer a:hover {
   text-decoration: underline;
 }
-/* SEZIONI CHIESE */
+
+/* --- SEZIONE CHIESE --- */
 .chiesa {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 215, 0, 0.4);
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 40px;
-  max-width: 500px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
@@ -207,24 +194,17 @@ footer {
   box-shadow: 0 0 35px rgba(255, 215, 0, 0.4);
 }
 
-/* TITOLI CHIESE */
 .chiesa h3 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   color: #FFD700;
   text-align: center;
   margin-bottom: 15px;
 }
+
 .foto_chiesa {
   width: 100%;
   border-radius: 12px;
   box-shadow: 0 0 25px rgb(255, 208, 0);
-  transition: transform 0.4s ease, box-shadow 0.3s ease;
-}
-
-.foto_chiesa img:hover {
-  transform: scale(1.5);
-  box-shadow: 0 0 35px rgba(255, 215, 0, 0.7);
 }
 
 /* TESTI CHIESE */
@@ -235,23 +215,37 @@ footer {
   color: #f0f0f0;
   margin-top: 10px;
 }
+
+/* LINK GIALLO */
 .link-giallo {
-    color: #FFD700; /* giallo */
-    text-decoration: underline;
-    transition: color 0.3s ease;
+  color: #FFD700;
+  text-decoration: underline;
+  transition: color 0.3s ease;
 }
 
 .link-giallo:hover {
-    color: #ffe600; /* cambia colore al passaggio del mouse */
+  color: #ffe600;
 }
-/* RESPONSIVE */
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+  body {
+    padding: 40px 60px;
+  }
+}
+
 @media (max-width: 768px) {
+  body {
+    padding: 30px 25px;
+  }
+
   .row {
     flex-direction: column;
+    gap: 20px;
   }
 
   .titolo-principale {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .sottotitolo {
@@ -259,32 +253,46 @@ footer {
   }
 
   .menu-centrale a {
-    padding: 10px 16px;
     font-size: 16px;
+    padding: 10px 14px;
   }
 
   .testo {
     font-size: 16px;
+    text-align: left;
+  }
+
+  .chiesa {
+    width: 100%;
+    max-width: 90%;
   }
 }
 
-/* Responsive tabella */
-@media (max-width: 600px) {
-  .tab-giocatori th, 
-  .tab-giocatori td {
-    font-size: 14px;
-    padding: 8px;
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
   }
-}
-@media (max-width: 927px) {
-  .row {
+
+  .titolo-principale {
+    font-size: 26px;
+  }
+
+  .menu-centrale {
     flex-direction: column;
+    align-items: center;
   }
 
-  .row .testo-col {
-    order: 1;
+  .menu-centrale a {
+    width: 80%;
+    text-align: center;
   }
-  .row .img-col {
-    order: 2;
+
+  .testo {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .chiesa {
+    padding: 15px;
   }
 }
