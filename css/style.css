@@ -81,6 +81,7 @@ body {
 }
 
 .col {
+  overflow: hidden;
   flex: 1 1 300px;
   padding: 10px;
 }
