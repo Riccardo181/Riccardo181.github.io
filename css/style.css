@@ -68,7 +68,7 @@ body {
   box-shadow: 0 0 15px #FFD700;
 }
 
-/* --- LAYOUT TESTO + IMMAGINE --- */
+/* Desktop: normale (testo + immagine affiancati) */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -77,8 +77,7 @@ body {
   gap: 30px;
   max-width: 1000px;
   margin: 0 auto 50px auto;
-  flex-direction: column-reverse;
-}
+  flex-direction: row;
 
 .col {
   flex: 1 1 300px;
@@ -269,37 +268,10 @@ body {
   }
 }
 
-@media (max-width: 480px) {
-  body {
-    padding: 20px;
-  }
-
-  .titolo-principale {
-    font-size: 26px;
-  }
-
-  .menu-centrale {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu-centrale a {
-    width: 80%;
-    text-align: center;
-  }
-
-  .testo {
-    font-size: 15px;
-    line-height: 1.5;
-  }
-
-  .chiesa {
-    padding: 15px;
-  }
-}
-@media (max-width: 1024px) {
+*/
+@media (max-width: 768px) {
   .row {
-    flex-direction: column;
+    flex-direction: column-reverse; /* Inverte solo sui telefoni */
+    gap: 20px;
   }
 }
-
