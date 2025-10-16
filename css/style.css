@@ -87,9 +87,9 @@ body {
 }
 
 .img-col img {
+   overflow: hidden;
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 0 25px rgb(255, 208, 0);
   transition: transform 0.4s ease, box-shadow 0.3s ease;
 }
 
