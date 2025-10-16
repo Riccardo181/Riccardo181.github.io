@@ -81,13 +81,11 @@ body {
 }
 
 .col {
-  overflow: hidden;
   flex: 1 1 300px;
   padding: 10px;
 }
 
 .img-col img {
-   overflow: hidden;
   width: 100%;
   border-radius: 12px;
   transition: transform 0.4s ease, box-shadow 0.3s ease;
