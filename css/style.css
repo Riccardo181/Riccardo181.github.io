@@ -78,6 +78,7 @@ body {
   max-width: 1000px;
   margin: 0 auto 50px auto;
   flex-direction: row;
+}
 
 .col {
   flex: 1 1 300px;
@@ -175,47 +176,6 @@ body {
   text-decoration: underline;
 }
 
-/* --- SEZIONE CHIESE --- */
-.chiesa {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 215, 0, 0.4);
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 40px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.chiesa:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 35px rgba(255, 215, 0, 0.4);
-}
-
-.chiesa h3 {
-  font-size: 26px;
-  color: #FFD700;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.foto_chiesa {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 0 25px rgb(255, 208, 0);
-}
-
-/* TESTI CHIESE */
-.chiesa p {
-  font-size: 18px;
-  line-height: 1.6;
-  text-align: justify;
-  color: #f0f0f0;
-  margin-top: 10px;
-}
-
 /* LINK GIALLO */
 .link-giallo {
   color: #FFD700;
@@ -268,10 +228,17 @@ body {
   }
 }
 
-*/
 @media (max-width: 768px) {
   .row {
     flex-direction: column-reverse; /* Inverte solo sui telefoni */
     gap: 20px;
+  }
+  
+  .text-col {
+    order: 1;
+  }
+
+  .img-col {
+    order: 2;
   }
 }
