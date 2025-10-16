@@ -93,10 +93,9 @@ body {
 }
 
 .img-col img:hover {
-  transform: scale(1.1);
+  transform: scale(1.20);
   box-shadow: 0 0 35px rgba(255, 215, 0, 0.7);
 }
-
 /* --- TESTO --- */
 .testo {
   font-size: 18px;
